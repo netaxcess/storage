@@ -15,7 +15,7 @@ func main() {
     //批量获取指定的KEY
     v, _ := s.MGet([]byte("a"), []byte("b"), []byte("c"))
     for _ , vv := range v {
-        //fmt.Println(string(vv))
+        fmt.Println(string(vv))
     }
     
     //通过范围查找KEY的值
